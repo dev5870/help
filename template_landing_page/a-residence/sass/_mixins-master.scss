@@ -1,0 +1,87 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//Бордер-радиус
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//Замедление анимации
+//Использование
+//a {
+ // color: gray;
+//  @include transition(color .3s ease);
+//  &:hover {
+//    color: black;
+//  }
+//}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Кроссбраузерное opacity с поддержкой до IE5
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+//Использование
+
+//.faded-text {
+ // @include opacity(0.8);
+//}
+
+
+//Размеры элементов
+
+@mixin size($width, $height: $width) {
+      width: $width;
+      height: $height;
+}
+//Использование
+
+// вариант где ширина и высота одинаковые 
+// зачем писать два раза одно и тоже?
+//.elem-1 {
+ // @include size(100px);
+//}
+// вариант где ширина и высота разные 
+//.elem-2 {
+ // @include size(100px, 50px);
+//}
+
+//Тень
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}

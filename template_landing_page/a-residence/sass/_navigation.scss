@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: $color-link;
+	@include transition(0.3s);
+
+	&:visited {
+		color: $color-link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+

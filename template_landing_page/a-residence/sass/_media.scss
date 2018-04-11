@@ -1,0 +1,206 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	body {
+  	font-size: 16px;
+} 
+	.title-header {
+    padding-top: 100px;
+    padding-bottom: 25px;
+		& h1 {
+			font-size: 48px;
+		}
+		& h2 {
+			font-size: 32px;
+		}
+}
+.title-description {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 32px;
+    
+}
+	.strok-1 .item, .strok-2 .item, .strok-3 .item {
+    padding: 50px 20px 35px 35px;
+}
+.strok-2 .item-text, .strok-2 .item-text {
+    padding-bottom: 50px;
+}
+.strok-3 .item-text {
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.strok-3 .item-text ul {
+    padding-left: 10px;
+}
+	.strok-3 .item-button button {
+		font-size: 18px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-phone {
+    padding: 20px 15px 10px;
+    
+}
+	.title-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+.title-header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.title-button button {
+    display: inline-block;
+    height: 40px;
+    padding: 0 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #8c5711;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.strok-1 .item-title h2, .strok-2 .item-title h2, .strok-3 .item-title h2 {
+    font-size: 24px;
+    
+}
+.strok-1 .item-button button, .strok-2 .item-button button {
+        height: 35px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    
+}
+	.strok-3 .item-button button {
+        height: 35px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    
+}
+.item-adress {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.sentence-title h2 {
+    font-size: 24px;
+   
+}
+.sentence-descript {
+    font-size: 20px;
+    
+}
+.sentence-form {
+    margin-top: 20px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.send-form input[type="submit"] {
+    height: 35px;
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+ }
+	
+	.thanks-header {
+		
+	& h1 {
+		
+		font-size: 32px;
+		}
+	
+	& h2 {
+		font-size: 24px;
+		
+	}
+}
+	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
