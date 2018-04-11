@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+
+<script src="jquery.js"></script>
+<script>
+
+$(function() {
+	$("a[rel]").overlay(function() {
+		var wrap = this.getContent().find("div.wrap");
+		if (wrap.is(":empty")) {
+			wrap.load(this.getTrigger().attr("href"));
+		}
+	});
+});
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+<title>Форма обратной связи в модальном окне</title>
+</head>
+
+<body>
+
+<a href="contact.html" rel="#overlay">
+
+	<button type="button">Написать сообщение администратору</button>
+</a>
+
+
+<div class="overlay" id="overlay">
+<div class="wrap"></div>
+</div>
+
+
+
+
+</body>
+</html>
