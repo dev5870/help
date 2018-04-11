@@ -1,0 +1,41 @@
+.yvedw{}
+.yved{
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    width: 300px;
+    vertical-align: middle;
+    height: 130px;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    line-height: 90px;
+    border-radius: 10px;
+    display: none;
+    z-index: 3000;
+}
+.yvedi{
+    float: left;
+    width: 50px!important;
+    margin-right: 10px;
+    margin-top: 20px;
+	}
+.yvedt{
+    width: 210px;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.yvedf1{
+    background-color: #363636;
+}
+.yvedf2{
+	background-color: #CD5555;
+}
+.yvedvt{
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    display: inline-block;
+    vertical-align: middle;
+}

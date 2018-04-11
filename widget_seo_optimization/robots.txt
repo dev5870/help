@@ -1,0 +1,1 @@
+User-agent: YandexBot,GooglebotCrawl-delay: 1Host: 1-split.ruDisallow: /404.phpDisallow: /thanks.phpDisallow: /policy.pdfSitemap: http://1-split.ru/sitemap.xml
