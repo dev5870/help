@@ -5,12 +5,80 @@
     <title>Phone mask</title>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/inputmask.js"></script>
+    <style>
+        .red{
+            border-color: red;
+        }
+    </style>
 </head>
 <body>
-<form>
-    <input type="text" name="fio" placeholder="name">
-    <input type="text" name="phone" placeholder="phone" data-mask="+7 (999) 999-99-99">
+<form id="form" method="post">
+    <input type="text" id="name" name="name" value="" placeholder="name" >
+    <input type="text" id="phone" name="phone" value="" placeholder="phone" data-mask="+7 (999) 999-99-99" >
     <button type="submit">Do it dude!</button>
 </form>
+
+
+<script>
+    $('#form').submit(function(e){
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+
+        console.log(name);
+        console.log(phone);
+
+        if (name == '' && phone == '')
+        {
+            document.getElementById("name").classList.add("red");
+            document.getElementById("phone").classList.add("red");
+            console.log("Заполните, пожалуйста, телефон и имя.");
+            return false;
+        }
+        else if (name !== '' && phone == '')
+        {
+            document.getElementById("name").classList.remove("red");
+            document.getElementById("phone").classList.add("red");
+            console.log("Заполните, пожалуйста, телефон.");
+            return false;
+        }
+        else if (name == '' && phone !== '')
+        {
+            document.getElementById("name").classList.add("red");
+            document.getElementById("phone").classList.remove("red");
+            console.log("Заполните, пожалуйста, имя.");
+            return false;
+        }
+        else
+        {
+            document.getElementById("name").classList.remove("red");
+            document.getElementById("phone").classList.remove("red");
+            console.log("Все поля заполнены.");
+
+            e.preventDefault();
+            var m_method=$(this).attr('method');
+            var m_action='send.php';
+            var m_data=$(this).serialize();
+            $.ajax({
+                type: m_method,
+                cache: false,
+                url: m_action,
+                crossDomain:true,
+                data: m_data,
+
+
+                success: function(data){
+                    console.log(data);
+                    $("#form")[0].reset();
+                },
+
+
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+
+        }
+    });
+</script>
 </body>
 </html>
