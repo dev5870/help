@@ -39,9 +39,14 @@
     background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
 }
 
+.dropdown-content a
+{
+    background: url('http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/Ukraine-Flag-icon.png') no-repeat left center;
+}
+
 .dropdown-content a:last-child
 {
-    background: url('http://www.miru-mir.info/images/en.gif') no-repeat left center;
+    background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/United-States-Flag-icon.png') no-repeat left center;
 }
 
 /* Links inside the dropdown */
