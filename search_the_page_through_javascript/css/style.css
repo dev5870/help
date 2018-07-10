@@ -1,0 +1,17 @@
+.hidden{
+    display: none;
+}
+
+input{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+p{
+    background-color: gray;
+    color :white;
+    font-size:18px;
+    width:200px;
+    padding:5px;
+    margin: 3px;
+}
