@@ -1,0 +1,29 @@
+body {
+    height: 1400px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.7);
+    width: 90px;
+    height: 50px;
+    display: none;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.return-to-top {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 14px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+
