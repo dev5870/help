@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GEO IP YANDEX</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            jQuery("#user-city").text(ymaps.geolocation.city);
+            jQuery("#user-region").text(ymaps.geolocation.region);
+            jQuery("#user-country").text(ymaps.geolocation.country);
+        }
+    </script>
+</head>
+<body>
+<div><b>Ваша страна:</b> <span id="user-country"></span></div>
+<div><b>Ваш регион:</b> <span id="user-region"></span></div>
+<div><b>Ваш город:</b> <span id="user-city"></span></div>
+</body>
+</html>
