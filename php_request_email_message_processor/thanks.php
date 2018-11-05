@@ -37,13 +37,13 @@ if (isset($_POST['name']) && !empty($_POST['name']))
         $msg .= "<p><strong>Имя:</strong> ".$name."</p>\r\n";
     }
     if(isset($_POST['phone']) && !empty($_POST['phone'])){
-        $msg .= "<p><strong>Имя:</strong> ".$phone."</p>\r\n";
+        $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
     }
     if(isset($_POST['message']) && !empty($_POST['message'])){
-        $msg .= "<p><strong>Имя:</strong> ".$message."</p>\r\n";
+        $msg .= "<p><strong>Сообщение:</strong> ".$message."</p>\r\n";
     }
     if(isset($_POST['type']) && !empty($_POST['type'])){
-        $msg .= "<p><strong>Имя:</strong> ".$type."</p>\r\n";
+        $msg .= "<p><strong>Тип заявки:</strong> ".$type."</p>\r\n";
     }
     $msg .= "</body></html>";
 // отправка сообщения
