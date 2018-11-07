@@ -21,6 +21,8 @@ $type  = strip_tags($_POST['type']);
 $name  = strip_tags($_POST['name']);
 $phone  = strip_tags($_POST['phone']);
 $message  = strip_tags($_POST['message']);
+$date = date("d.m.y");
+$time = date("H:i:s");
 
 if (isset($_POST['name']) && !empty($_POST['name']))
 {
@@ -45,6 +47,8 @@ if (isset($_POST['name']) && !empty($_POST['name']))
     if(isset($_POST['type']) && !empty($_POST['type'])){
         $msg .= "<p><strong>Тип заявки:</strong> ".$type."</p>\r\n";
     }
+    $msg .= "<p><strong>Дата заказа:</strong> ".$date."</p>\r\n";
+    $msg .= "<p><strong>Время заказа:</strong> ".$time."</p>\r\n";
     $msg .= "</body></html>";
 // отправка сообщения
     mail($to, $subject, $msg, $headers);
