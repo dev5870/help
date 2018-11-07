@@ -1,1 +1,1 @@
-Options +FollowSymLinksRewriteEngine OnRewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]RewriteRule ^(.*)$ http://%1/$1 [R=301,L]ErrorDocument 404 /404.phpRedirect 301 /index.html /index.php
+Options +FollowSymLinksRewriteEngine On# редирект с wwwRewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]RewriteRule ^(.*)$ http://%1/$1 [R=301,L]# редирект на страницу ошибки 404ErrorDocument 404 /404.php# редирект на основную страницуRedirect 301 /index.html /index.php# редирект на www# RewriteCond %{HTTP_HOST} ^site.ru# RewriteRule (.*) http://www.site.ru/$1 [R=301,L]
