@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="windows-1251" />    
+    <title>SergeLand Image Zoomer v3.0</title>
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/zoomsl-3.0.min.js"></script>	
+</head>
+<body>
+						
+<script>
+jQuery(function(){
+
+    // если отсутсвует zoomsl-3.0.min.js
+	if(!$.fn.imagezoomsl){
+	
+		$('.msg').show();
+		return;
+	}
+     else $('.msg').hide();
+
+	 
+	// инициализация плагина
+	$('.my-foto').imagezoomsl({ 
+
+		zoomrange: [3, 3]	
+	});  
+});
+</script>
+
+<br><br>
+
+<table border="0">
+<tr><td colspan="3" align="center"><p class="msg"><font color="red">В папке js отсутствует zoomsl-3.0.min.js. Не могу инициализировать плагин.</font></p></td></tr>
+<tr>
+	<td width="40%">&nbsp;</td><td>
+
+		<img class="my-foto" src="images/image-small.jpg" data-large="images/image-big.jpg" title="Фото">
+
+	</td><td width="40%">&nbsp;</td>
+</tr></table>	 
+</body>
+</html>
