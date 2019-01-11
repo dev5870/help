@@ -28,7 +28,7 @@ if (isset($_POST['name']) && !empty($_POST['name']))
 {
     
 // Формирование заголовка письма
-    $subject  = "[Заявка с сайта ".$sitename."]";
+    $subject  = "[Zajavka s sajta ".$sitename."]";
     $headers  = "From: mail@".$sitename." \r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
