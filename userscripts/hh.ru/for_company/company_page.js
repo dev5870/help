@@ -19,6 +19,7 @@
         var active;
         var sfera;
         var profile;
+        var city;
 
         // проверяем название компании
         if (document.getElementsByClassName("header")[1] != undefined) {
@@ -74,6 +75,15 @@
             profile = "ссылка отсутствует";
         }
 
+        // проверяем сферы деятельности компании
+        if (document.getElementsByClassName("company-info")[0].getElementsByTagName("p")[0] != undefined) {
+            console.log("город существует");
+            city = document.getElementsByClassName("company-info")[0].getElementsByTagName("p")[0].textContent;
+        } else {
+            console.log("город существует");
+            city = "город существует";
+        }
+
         var oldItems = JSON.parse(localStorage.getItem('CompanyItems')) || [];
         var newItem = {
             'name': name,
@@ -81,7 +91,8 @@
             'url': url,
             'active': active,
             'sfera': sfera,
-            'profile': profile
+            'profile': profile,
+            'city': city
 
         };
         oldItems.push(newItem);
