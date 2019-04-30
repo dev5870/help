@@ -58,7 +58,7 @@
         }
 
         // проверяем сферы деятельности компании
-        if (document.getElementsByClassName("HH-SidebarView-Industries")[0].getElementsByTagName("p")[1] != undefined) {
+        if (document.getElementsByClassName("HH-SidebarView-Industries")[0] != undefined) {
             console.log("сферы существуют");
             sfera = document.getElementsByClassName("HH-SidebarView-Industries")[0].getElementsByTagName("p")[1].textContent;
         } else {
@@ -75,8 +75,8 @@
             profile = "ссылка отсутствует";
         }
 
-        // проверяем сферы деятельности компании
-        if (document.getElementsByClassName("company-info")[0].getElementsByTagName("p")[0] != undefined) {
+        // проверяем город компании
+        if (document.getElementsByClassName("company-info")[0] != undefined) {
             console.log("город существует");
             city = document.getElementsByClassName("company-info")[0].getElementsByTagName("p")[0].textContent;
         } else {
