@@ -21,6 +21,11 @@
         var profile;
         var city;
 
+        var url_string = window.location;
+        var getUrl = new URL(url_string);
+        var c = getUrl.searchParams.get("page");
+        console.log(c);
+
         // проверяем название компании
         if (document.getElementsByClassName("header")[1] != undefined) {
             console.log("Имя существует");
@@ -84,7 +89,7 @@
             city = "город существует";
         }
 
-        var oldItems = JSON.parse(localStorage.getItem('CompanyItems')) || [];
+        var oldItems = JSON.parse(localStorage.getItem('CompanyItems'+c)) || [];
         var newItem = {
             'name': name,
             'about': about,
@@ -96,7 +101,7 @@
 
         };
         oldItems.push(newItem);
-        localStorage.setItem('CompanyItems', JSON.stringify(oldItems));
+        localStorage.setItem('CompanyItems'+c, JSON.stringify(oldItems));
         setTimeout(function () {
             window.top.close();
         }, 500);

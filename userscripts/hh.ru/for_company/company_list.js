@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         https://hh.ru/employers_company/
+// @name         https://hh.ru/employers_company/*
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://hh.ru/employers_company/informacionnye_tekhnologii_sistemnaya_integraciya_internet
+// @match        https://hh.ru/employers_company/*
 // @grant        none
 // ==/UserScript==
 
@@ -17,9 +17,20 @@
     function start() {
         setTimeout(function () {
             if (i < link.length) {
+
+                var old;
+                if (JSON.parse(localStorage.getItem('page')) != null) {
+                    console.log("localStorage != null");
+                    old = JSON.parse(localStorage.getItem('page'));
+                } else {
+                    console.log("localStorage == null");
+                    old = 0;
+                }
+                newPage = old + 1;
+
                 console.log("Начало обработки ссылки № " + i);
                 console.log(document.getElementsByClassName("employers-company__description")[i].getElementsByTagName("a")[0]);
-                window.open(document.getElementsByClassName("employers-company__description")[i].getElementsByTagName("a")[0]);
+                window.open(document.getElementsByClassName("employers-company__description")[i].getElementsByTagName("a")[0]+"?page="+newPage);
                 i++;
                 console.log(i);
                 start();
