@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>css tooltip</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            text-align: center;
+            background-color: #384047;
+            color: #FFF;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .tooltip {
+            cursor: help;
+            position: relative;
+            float: left;
+            margin: 5% 1%;
+        }
+
+        .tooltip::before,
+        .tooltip::after {
+            position: absolute;
+            left: 50%;
+            opacity: 0;
+            z-index: -100;
+        }
+
+        .tooltip:hover::before,
+        .tooltip:focus::before,
+        .tooltip:hover::after,
+        .tooltip:focus::after {
+            opacity: 1;
+            z-index: 100;
+            transform: scale(1) translateY(0);
+        }
+
+        .tooltip:hover::before,
+        .tooltip:focus::before {
+            transition-delay: .5s;
+        }
+
+        /*styling the triangle*/
+        .tooltip::before {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #f00;
+            border-color: #3498DB transparent transparent transparent;
+            bottom: 102%;
+            margin-left: -.5em;
+            content: "";
+            transform: scale(.6) translateY(-90%);
+            transition: all .5s cubic-bezier(.85, -0.18, .31, 1
+            26), opacity .65s .1s;
+        }
+
+        /* styling the speech bubble */
+        .tooltip::after {
+            background: #3498DB;
+            border-radius: .25em;
+            bottom: 105%;
+            color: #EDEFF0;
+            width: 10em;
+            padding: 1em;
+            margin-left: -5em;
+            content: attr(data-tip);
+            transform: scale(.9) translateY(90%);
+            transition: all .5s cubic-bezier(.84, -.18, .31, 1.26) .2s;
+        }
+
+        .tooltip:hover::after,
+        .tooltip:focus::after {
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+<body>
+<div class="tooltip-container">
+    <h1>A simple CSS Tooltip</h1>
+    <div class="wrapper">
+        <div class="tooltip" data-tip="I'm a bear!" tabindex="1"><img src="https://goo.gl/Jf5DUR" height="200"/></div>
+        <div class="tooltip" data-tip="I'm a honey pot!" tabindex="1"><img src="https://goo.gl/OBmsOe" height="190"/></div>
+    </div>
+</div>
+</body>
+</html>
