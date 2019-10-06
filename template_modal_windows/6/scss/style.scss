@@ -1,0 +1,146 @@
+$color-1: #16a085;
+$color-2: #2980b9;
+$light-black: #333;
+
+html {
+	color: $light-black;
+	background-color: $color-1;
+}
+
+label {
+	cursor: pointer;
+	transition: all 250ms;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 50px;
+	
+	h1 {
+		font-weight: 100;
+		color: white;
+		text-align: center;
+	}
+	
+	.modal-button {
+		position: relative;
+		display: block;
+		margin: 100px auto;
+		padding: 20px 25px 34px;
+		width: 50px;
+		font-size: 36px;
+		font-weight: 300;
+		color: $color-2;
+		text-align: center;
+		line-height: 0.3;
+		background-color: white;
+		border-radius: 50%;
+		box-shadow: 0 0 45px rgba(0,0,0,0.2);
+		transition: all 250ms;
+		
+		span {
+			font-size: 12px;
+		}
+		
+		&:hover,
+		&:focus {
+			color: $color-1;
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		}
+	}
+	
+	.modal-content,
+	.modal-background {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	
+	.modal-background {
+		transition: height 250ms;
+	}
+	
+	.modal-content {
+		transform: scale(0);
+		transition: transform 500ms;
+	}
+		
+	#modal {
+		display: none;
+		
+		&:checked ~ .modal-background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: transparentize(black,0.2);
+			visibility: visible;
+			opacity: 1;
+			transition: height 250ms;
+		}
+		
+		&:checked ~ .modal-content {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -25%;
+			margin-left: -25%;
+			width: 50vw;
+			height: auto;
+			padding: 40px;
+			background-color: white;
+			border-radius: 3px;
+			visibility: visible;
+			opacity: 1;
+			pointer-events: auto;
+			cursor: auto;
+			transform: scale(1);
+			transition: transform 500ms;
+			
+			.modal-close {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				font-size: 22px;
+				color: transparentize($light-black,0.6);
+				transition: color 200ms,
+						  transform 500ms;
+				
+				&:hover,
+				&:focus {
+					color: $light-black;
+					transform: rotate(360deg);
+				}
+			}
+			
+			p {
+				position: relative;
+				margin: 0 0 20px 0;
+				font-weight: 200;
+				font-size: 14px;
+				line-height: 1.6;
+			}
+
+			.modal-content-button {
+				position: relative;
+				float: right;
+				margin: 0;
+				padding: 10px 20px;
+				color: white;
+				font-weight: 100;
+				border-radius: 3px;
+				background-color: $color-2;
+				
+				&:hover,
+				&:focus {
+					background-color: lighten($color-2,10%);
+				}
+			}
+		}
+	}
+}
