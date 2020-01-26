@@ -3,25 +3,26 @@
     position: fixed;
     right: 10px;
     top: 70px;
-    width: 300px;
+    width: 280px;
     vertical-align: middle;
-    height: 130px;
+    height: 65px;
     color: white;
     padding: 15px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 90px;
     border-radius: 10px;
     display: none;
     z-index: 3000;
+    opacity: 0.7;
 }
 .yvedi{
     float: left;
-    width: 50px!important;
+    width: 35px!important;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
 	}
 .yvedt{
-    width: 210px;
+    width: 190px;
     line-height: normal;
     display: inline-block;
     vertical-align: middle;
@@ -34,8 +35,8 @@
 }
 .yvedvt{
     float: left;
-    height: 90px;
-    line-height: 90px;
+    height: 40px;
+    line-height: 40px;
     display: inline-block;
     vertical-align: middle;
 }

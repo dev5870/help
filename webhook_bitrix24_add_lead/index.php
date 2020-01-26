@@ -1,5 +1,11 @@
 <?php
 
+$utm_source  = strip_tags($_POST['utm_source']);
+$utm_medium  = strip_tags($_POST['utm_medium']);
+$utm_campaign  = strip_tags($_POST['utm_campaign']);
+$utm_content  = strip_tags($_POST['utm_content']);
+$utm_term  = strip_tags($_POST['utm_term']);
+
 // формируем URL в переменной $queryUrl
 // для получения URL необходимо в админ панели CRM создать входящий вебхук
 $queryUrl = 'https://[адрес_домена].bitrix24.ru/rest/[id_пользователя]/[вебхук]/crm.lead.add.json';
@@ -15,7 +21,12 @@ $queryData = http_build_query(array(
                 "VALUE" => "79991111111",
                 "VALUE_TYPE" => "WORK",
             ),
-        )
+        ),
+        "UTM_CAMPAIGN" => $utm_campaign,"",$utm_campaign,
+        "UTM_CONTENT" => $utm_content,"",$utm_content,
+        "UTM_MEDIUM" => $utm_medium,"",$utm_medium,
+        "UTM_SOURCE" => $utm_source,"",$utm_source,
+        "UTM_TERM" => $utm_term,"",$utm_term
     ),
     'params' => array("REGISTER_SONET_EVENT" => "Y")
 ));
