@@ -1,0 +1,40 @@
+@font-face{
+    font-family:'Montserrat';
+    src:url('../fonts/Montserrat-Regular.ttf');
+    src:url('../fonts/Montserrat-Regular.woff');
+}
+@font-face{
+    font-family:'Montserrat-Bold';
+    src:url('../fonts/Montserrat-Bold.ttf');
+    src:url('../fonts/Montserrat-Bold.woff');
+}
+@font-face{
+    font-family:'Montserrat-ExtraBold';
+    src:url('../fonts/Montserrat-ExtraBold.ttf');
+    src:url('../fonts/Montserrat-ExtraBold.woff');
+}
+@font-face{
+    font-family:'Montserrat-Medium';
+    src:url('../fonts/Montserrat-Medium.ttf');
+    src:url('../fonts/Montserrat-Medium.woff');
+}
+@font-face{
+    font-family:'Montserrat-SemiBold';
+    src:url('../fonts/Montserrat-SemiBold.ttf');
+    src:url('../fonts/Montserrat-SemiBold.woff');
+}
+@font-face{
+    font-family:'Gilroy-ExtraBold';
+    src:url('../fonts/Gilroy-ExtraBold.ttf');
+    src:url('../fonts/Gilroy-ExtraBold.woff');
+}
+@font-face{
+    font-family:'GothamPro-Black';
+    src:url('../fonts/GothamPro-Black.ttf');
+    src:url('../fonts/GothamPro-Black.woff');
+}
+@font-face{
+    font-family:'GothamPro-Medium';
+    src:url('../fonts/GothamPro-Medium.ttf');
+    src:url('../fonts/GothamPro-Medium.woff');
+}

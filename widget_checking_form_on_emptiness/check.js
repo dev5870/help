@@ -1,13 +1,13 @@
-function check0(){
+function checkForm(){
     console.log('ok');
-    var phone0 = document.getElementById("phone0").value;
-    var name0 = document.getElementById("name0").value;
-    var message0 = document.getElementById("message0").value;
-    console.log(phone0);
-    console.log(name0);
-    console.log(message0);
+    var phone = document.getElementById("phone").value;
+    var name = document.getElementById("name").value;
+    var message = document.getElementById("message").value;
+    console.log(phone);
+    console.log(name);
+    console.log(message);
 
-    if (phone0 == '')
+    if (phone == '')
     {
         alert("Укажите, пожалуйста, телефон.");
         return false;
@@ -17,10 +17,10 @@ function check0(){
         $.ajax({
             type: 'POST',
             url: 'send.php',
-            data: 'contact_name='+name0+'&contact_phone='+phone0+'&message='+message0+'',
+            data: 'contact_name='+name+'&contact_phone='+phone+'&message='+message+'',
             success: function(data){
                 alert('Спасибо! Ваша заявка успешно отправлена!')
-                $("#pwebcontact267_form")[0].reset();
+                $("#form")[0].reset();
             }
         });
     }

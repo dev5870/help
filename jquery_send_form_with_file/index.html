@@ -1,1 +1,60 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title>Jquery send form with file</title>    <script src="js/jquery-3.2.1.min.js"></script></head><body><form action="send.php" id="form" class="form" method="post" enctype="multipart/form-data">    <input type="file" name="fileforsending"><br>    <input type="text" name="Name" placeholder="Name" required><br>    <input type="submit" value="Отправить">    <div class="thankyou" style="display: none">Спасибо!</div></form><script>//    $('#form').submit(function(e){////        e.preventDefault();//        var m_method=$(this).attr('method');//        var m_action='send.php';//        var m_data=$(this).serialize();//        $.ajax({//            type: m_method,//            cache: false,//            url: m_action,//            crossDomain:true,//            data: m_data,////            success: function(){//                $(".thankyou").show();//                $(".form")[0].reset();//            }//        });////    });        $('#form').on('submit', function(e){            e.preventDefault();            var $that = $(this),                    formData = new FormData($that.get(0)); // создаем новый экземпляр объекта и передаем ему нашу форму (*)            $.ajax({                contentType: false, // важно - убираем форматирование данных по умолчанию                processData: false, // важно - убираем преобразование строк по умолчанию                data: formData,                url: 'send.php',                type: 'POST',                success: function(json){                    if(json){                        $(".thankyou").show();                        $(".form")[0].reset();                    }                }            });        });</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jquery send form with file</title>
+  <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <form action="send.php" id="form" class="form" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileforsending"><br>
+    <input type="text" name="Name" placeholder="Name" required><br>
+    <input type="submit" value="Отправить">
+    <div class="thankyou" style="display: none">Спасибо!</div>
+  </form>
+  <script>
+    //    $('#form').submit(function(e){
+    //
+    //        e.preventDefault();
+    //        var m_method=$(this).attr('method');
+    //        var m_action='send.php';
+    //        var m_data=$(this).serialize();
+    //        $.ajax({
+    //            type: m_method,
+    //            cache: false,
+    //            url: m_action,
+    //            crossDomain:true,
+    //            data: m_data,
+    //
+    //            success: function(){
+    //                $(".thankyou").show();
+    //                $(".form")[0].reset();
+    //            }
+    //        });
+    //
+    //    });
+
+    $('#form').on('submit', function(e) {
+      e.preventDefault();
+      var $that = $(this),
+        formData = new FormData($that.get(0)); // создаем новый экземпляр объекта и передаем ему нашу форму (*)
+      $.ajax({
+        contentType: false, // важно - убираем форматирование данных по умолчанию
+        processData: false, // важно - убираем преобразование строк по умолчанию
+        data: formData,
+        url: 'send.php',
+        type: 'POST',
+        success: function(json) {
+          if (json) {
+            $(".thankyou").show();
+            $(".form")[0].reset();
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

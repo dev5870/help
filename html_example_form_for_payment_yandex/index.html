@@ -1,1 +1,245 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title></title></head><body><form target="_blank" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">    <input type="hidden" name="receiver" value="410011651875069"> <!-- номе кошелька получателя -->    <input type="hidden" name="formcomment" value="Магазин Landig page">    <input type="hidden" name="short-dest" value="Оплата заказа">    <input type="hidden" name="label" value="$order_id">    <input type="hidden" name="quickpay-form" value="donate">    <input type="hidden" name="targets" value="<?php echo $heading_title; ?>">    <input type="hidden" name="sum" value="<?php echo $price1; ?>" data-type="number">    <input type="hidden" name="comment" value="Артикул: <?php echo $model; ?>">    <input type="hidden" name="need-fio" value="false">    <input type="hidden" name="need-email" value="true">    <input type="hidden" name="need-phone" value="false">    <input type="hidden" name="need-address" value="false">    <b>Выберите способ оплаты:</b><br>    <label><input type="radio" name="paymentType" value="PC"> Яндекс.Деньгами</label><br>    <label><input type="radio" name="paymentType" value="AC"> Банковской картой</label><br>    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Купить"></form></body></html>
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta property = "og:type" content = "website" />
+	<meta property = "og:url" content = "" />
+    <meta property="og:image" content="/img/og-img.jpg">
+    <meta property="og:image:type" content="image/jpeg" />
+    <title>Beauty-ракета</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/drawer.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css?ver=1.1.5">
+    <link rel="stylesheet" href="css/media.css?ver=1.1.5">
+
+
+</head>
+<body class="drawer drawer--right">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+     ym(67912657, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/67912657" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+<div class="page-head">
+
+  	<img src="img/page-head-sofia.png" alt="" class="page-head_sofia">
+<!--
+  	<div class="page-head_video mobile">
+    	<a href="https://youtu.be/u69rfTdN314" class="page-head_video-play fancybox-media"></a>
+        <div class="page-head_video-text">
+            Узнайте все <br>
+			о программе <br>
+			за 3 минуты
+        </div>
+    </div>
+-->
+
+    <div class="head-top">
+    	<div class="head-logo"><img src="img/head-logo2.png" alt="head-logo"></div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="head-subtop">
+            <div class="head-subtop_about">Курс по продвижению и построению личного бренда для beauty-мастеров, салонов красоты, фитнес-тренеров, врачей-диетологов, тату-мастеров и всех, кто продвигает свой бизнес через социальные сети</div>
+        </div>
+
+        <div class="head-title">
+            <div class="head-title_label">Нашумевший курс Beauty-ракета<br>с безумной скидкой 80%</div>
+            <div class="head-title_text">Выйди на новый уровень чтобы увеличить <br>
+            свой доход в 2 раза всего <span>за 5 недель</span> <br>на курсе «Beauty-ракета»</div>
+        </div>
+
+        <div class="head-desc_slider">
+            <div>
+            	<div class="head-slider_box">
+            		<div class="head-slider_box-img"><img src="img/head-slider_img1.png" alt="head-slider_img1"></div>
+            		<div class="head-slider_box-text">
+            			Получи самые эффективные <br>
+						инструменты продаж и продвижения <br>
+						в сфере beauty-индустрии
+            		</div>
+            	</div>
+           	</div>
+            <div>
+            	<div class="head-slider_box">
+            		<div class="head-slider_box-img"><img src="img/head-slider_img2.png" alt="head-slider_img2"></div>
+            		<div class="head-slider_box-text">
+            			Курс адаптирован <br>
+						для мастеров любого уровня. <br>
+						Даже если у вас еще «ноль», <br>
+						или вы уже известный мастер
+            		</div>
+            	</div>
+           	</div>
+            <div>
+            	<div class="head-slider_box">
+            		<div class="head-slider_box-img"><img src="img/head-slider_img3.png" alt="head-slider_img3"></div>
+            		<div class="head-slider_box-text">
+            			Гарантируем 100% возврат <br>
+						средств, если вы <br>
+						не увеличите свой доход
+            		</div>
+            	</div>
+           	</div>
+        </div>
+
+        <div class="page-head_bott">
+            <div class="order-btn">
+                <!-- <a href="https://jqjdxf.zenclass.ru/public/course/8d94dd44-4eb7-4cc0-aec9-eb6e80098f8b" class="order-btn_inn ordr-btn" onclick="ym(67912657,'reachGoal','zayavka');">Оплатить курс со скидкой 80%</a> -->
+                <a href="pay.php?price=4990&name=Нашумевший курс Beauty-ракета с безумной скидкой 80%" target="_blank" class="order-btn_inn ordr-btn" onclick="ym(67912657,'reachGoal','zayavka');">Оплатить курс со скидкой 80%</a>
+
+            </div>
+
+
+            					           		</div>
+            </div>
+<!--
+            <div class="page-head_video">
+            	<a href="https://youtu.be/u69rfTdN314" class="page-head_video-play fancybox-media"></a>
+            	<div class="page-head_video-text">
+            		Узнайте все <br>
+					о программе <br>
+					за 3 минуты
+            	</div>
+            </div>
+-->
+        </div>
+
+    </div>
+</div><!--page-head-->
+
+
+<script>
+   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+img.setAttribute('src', img.getAttribute('data-src'));
+img.onload = function() {
+img.removeAttribute('data-src');
+};
+});
+</script>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/drawer.min.js"></script>
+<script src="js/iscroll.min.js"></script>
+<script src="js/sly.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/common.js?ver=1.0.6"></script>
+
+<script>
+
+
+
+	var vinW = $(window).width() + 17;
+
+	if(vinW > 1050){
+
+		$(window).scroll(function(){
+
+		var st = $(this).scrollTop();
+		var st2 = $('#program-block').offset().top;
+		var res = st - st2;
+
+		if(res > -250){
+			$('.program-img1').css({
+				'transform' : 'translate(-50%, ' + (res/3 + 75) + 'px)'
+			});
+		}
+
+
+	})
+
+	}
+
+
+</script>
+
+<!-- виджет онлайн заказов -->
+<script src="yved/script.js"></script>
+<link rel="stylesheet" href="yved/style.css">
+<div class="yvedw">
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Константин Дибров, 8918243XXXX, сделал заказ на сумму 3980руб, число 2 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf2">
+    <img src="yved/yico2.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Елена Вострякова, 914445XXXX, заказала обратный звонок</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Ярослав Гладких, 7918342XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Иван Курило, 8918652XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Денис Денисенко, 928333XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Алексей Беляков, 8924270XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Анастасия Васильева, 7911124XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf2">
+    <img src="yved/yico2.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Павел Александрович, 7913841XXXX, заказал обратный звонок</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Роман Витальевич, 8925025XXXX, сделал заказ на сумму 3980руб, число 2 шт</div>
+    </div>
+  </div>
+  <div class="yved yvedf1">
+    <img src="yved/yico.png" alt="" class="yvedi">
+    <div class="yvedvt">
+      <div class="yvedt">Виктор Бодров, 7964450XXXX, сделал заказ на сумму 1990руб, число 1 шт</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

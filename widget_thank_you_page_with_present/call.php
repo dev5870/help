@@ -162,22 +162,6 @@ else
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 </div>
 <div class="section footer">
@@ -209,8 +193,5 @@ else
     </div>
 </div>
 
-
-
 </body>
 </html>
-

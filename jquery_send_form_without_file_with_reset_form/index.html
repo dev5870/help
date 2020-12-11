@@ -1,1 +1,51 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title>JQUERY:  send form without file</title>    <script src="js/jquery-3.2.1.min.js"></script></head><body><form id="form" action="send.php" method="post">    <input type="text" name="text" placeholder="любой текст" required><br>    <input type="submit" value="отправить">    <div class="thankyou" style="display: none">Form send</div>    <div class="error" style="display: none">error</div></form><div id="test"></div><script>    $('#form').submit(function(e){        e.preventDefault();        var m_method=$(this).attr('method');        var m_action='send.php';        var m_data=$(this).serialize();        $.ajax({            type: m_method,            cache: false,            url: m_action,            crossDomain:true,            data: m_data,            success: function(data){                $(".thankyou").show();                $("#form")[0].reset();                $('#test').empty().html(data);            },            error: function (err) {                console.log(err);                $(".error").show();                $("#form")[0].reset();                $('#test').empty().html(err);            }        });    });</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JQUERY: send form without file</title>
+  <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <form id="form" action="send.php" method="post">
+    <input type="text" name="text" placeholder="любой текст" required><br>
+    <input type="submit" value="отправить">
+    <div class="thankyou" style="display: none">Form send</div>
+    <div class="error" style="display: none">error</div>
+
+  </form>
+  <div id="test"></div>
+  <script>
+    $('#form').submit(function(e) {
+      e.preventDefault();
+      var m_method = $(this).attr('method');
+      var m_action = 'send.php';
+      var m_data = $(this).serialize();
+      $.ajax({
+        type: m_method,
+        cache: false,
+        url: m_action,
+        crossDomain: true,
+        data: m_data,
+
+
+        success: function(data) {
+          $(".thankyou").show();
+          $("#form")[0].reset();
+          $('#test').empty().html(data);
+        },
+
+
+        error: function(err) {
+          console.log(err);
+          $(".error").show();
+          $("#form")[0].reset();
+          $('#test').empty().html(err);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

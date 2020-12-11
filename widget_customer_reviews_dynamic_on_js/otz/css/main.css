@@ -1,1 +1,122 @@
-.k-title-section h3 {    font-size: 1.17em;    margin: 1em 0;}.k-content-container img {    border: 0; /* 1 */    -ms-interpolation-mode: bicubic; /* 2 */}*,.k-content-container :before,.k-content-container :after {    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    box-sizing: border-box;}.k-content-container p {    margin: 0;    line-height: 1.2em;}.k-content-container {    margin: 0;    padding-top: 50px;    padding-bottom: 50px;    text-align: center;    font-family: 'Roboto', sans-serif;    font-size: 18px;    font-weight: 300;    color: #333;    background: #efefef;}.k-title-section {    font-size: 36px;    font-weight: 300;    margin: 0;    margin-bottom: 50px;}.k-reviews-item {    width: 85%;    margin: 0 auto;    margin-bottom: 50px;    position: relative;}.k-reviews-item .user-photo {    width: 150px;    height: 150px;    border-radius: 50%;    overflow: hidden;}.k-reviews-item .user-photo img {    width: 100%;    height: 100%;}.k-reviews-item.on-the-left .user-photo {    position: absolute;    top: 50%;    left: 0;    margin-top: -75px;}.k-reviews-item.on-the-right .user-photo {    position: absolute;    top: 50%;    right: 0;    margin-top: -75px;}.k-reviews-item .user-post {    width: 100%;    text-align: left;    padding: 15px 25px;}.k-reviews-item.on-the-left .user-post {    text-align: left;    padding-left: 180px;}.k-reviews-item.on-the-right .user-post {    text-align: right;    padding-right: 180px;}.k-reviews-item .user-post-title {    margin-bottom: 15px;    font-weight: 700;}@media only screen and (max-width:580px) {    .k-reviews-item.on-the-left .user-photo,    .k-reviews-item.on-the-right .user-photo {        position: inherit;        margin: 0 auto 10px;    }    .k-reviews-item.on-the-left .user-post,    .k-reviews-item.on-the-right .user-post {        padding: inherit;        text-align: center;    }}@media only screen and (max-width:480px) {    body {        font-size: 16px;    }    .k-title-section {        font-size: 32px;    }}
+.k-title-section h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+.k-content-container img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+*,
+.k-content-container :before,
+.k-content-container :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.k-content-container p {
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.k-content-container {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  background: #efefef;
+}
+
+.k-title-section {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.k-reviews-item {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.k-reviews-item .user-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.k-reviews-item .user-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.k-reviews-item.on-the-left .user-photo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -75px;
+}
+
+.k-reviews-item.on-the-right .user-photo {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -75px;
+}
+
+.k-reviews-item .user-post {
+  width: 100%;
+  text-align: left;
+  padding: 15px 25px;
+}
+
+.k-reviews-item.on-the-left .user-post {
+  text-align: left;
+  padding-left: 180px;
+}
+
+.k-reviews-item.on-the-right .user-post {
+  text-align: right;
+  padding-right: 180px;
+}
+
+.k-reviews-item .user-post-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width:580px) {
+
+  .k-reviews-item.on-the-left .user-photo,
+  .k-reviews-item.on-the-right .user-photo {
+    position: inherit;
+    margin: 0 auto 10px;
+  }
+
+  .k-reviews-item.on-the-left .user-post,
+  .k-reviews-item.on-the-right .user-post {
+    padding: inherit;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .k-title-section {
+    font-size: 32px;
+  }
+}

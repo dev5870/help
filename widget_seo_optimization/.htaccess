@@ -1,9 +1,15 @@
 Options +FollowSymLinks
 RewriteEngine On
 
+# *** редирект на другой домен *** #
+RewriteRule .* https://new.site/ [L,R=permanent]
+
 # *** массовая склейка ***
  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/
  RewriteRule ^(.*)index\.(php|html|htm)$ http://print.omlook.com/$1 [R=301,L]
+
+# *** указание индексного файла ***
+DirectoryIndex page10118754.html
 
 #  *** редирект с www ***
  RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
