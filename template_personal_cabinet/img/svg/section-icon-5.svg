@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="30px" viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon- Jobs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Deskop-verion" transform="translate(-703.000000, -4067.000000)">
+            <g id="Jobs" transform="translate(0.000000, 3791.000000)">
+                <g id="Jobs---Text" transform="translate(428.000000, 270.000000)">
+                    <g id="Icon--Jobs" transform="translate(272.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                        <g id="Group-35" transform="translate(4.074855, 7.545157)" stroke="#303A48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <rect id="Rectangle-13" x="0.0805048606" y="6.10564986" width="28.3662518" height="21.2746888" rx="2"></rect>
+                            <path d="M9.76303138,0.196014081 L18.7642301,0.196014081 C19.8687996,0.196014081 20.7642301,1.09144458 20.7642301,2.19601408 L20.7642301,6.10564986 L7.76303138,6.10564986 L7.76303138,2.19601408 C7.76303138,1.09144458 8.65846188,0.196014081 9.76303138,0.196014081 Z" id="Rectangle-13-Copy"></path>
+                            <g id="Group-30" transform="translate(6.221159, 6.105650)">
+                                <path d="M1.89155535,0.326898179 L1.89155535,20.7054462" id="Path-7"></path>
+                                <path d="M14.5998154,0.326898179 L14.5998154,20.7054462" id="Path-7-Copy"></path>
+                            </g>
+                        </g>
+                        <g id="Group-36" transform="translate(22.142121, 8.496066)">
+                            <circle id="Oval-7" stroke="#2196F3" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="8.55817844" cy="8.55817844" r="8.02319539"></circle>
+                            <text id="$" font-family="ProximaNova-Bold, Proxima Nova" font-size="10" font-weight="bold" letter-spacing="0.3125" fill="#2196F3">
+                                <tspan x="5.7054523" y="12.5581784">$</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

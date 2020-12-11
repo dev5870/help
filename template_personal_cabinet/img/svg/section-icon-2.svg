@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="34px" viewBox="0 0 32 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon- Safety</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Deskop-verion" transform="translate(-185.000000, -5027.000000)">
+            <g id="Safety---Section" transform="translate(180.000000, 4963.000000)">
+                <g id="Safety---Text" transform="translate(0.000000, 60.000000)">
+                    <g id="icon--Safety" transform="translate(1.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                        <g id="Group-52" transform="translate(5.000000, 5.000000)">
+                            <g id="Group-14-Copy" transform="translate(0.042490, 0.975920)" stroke="#303A48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <g id="Group-13" transform="translate(0.000000, 0.000000)">
+                                    <path d="M11.4336172,0 L11.4336172,0 C14.3480537,-5.35373299e-16 16.7106713,2.36261759 16.7106713,5.27705409 L16.7106713,11.6172676 C16.7106713,14.5317041 14.3480537,16.8943217 11.4336172,16.8943217 L11.4336172,16.8943217 C8.5191807,16.8943217 6.15656311,14.5317041 6.15656311,11.6172676 L6.15656311,5.27705409 C6.15656311,2.36261759 8.5191807,5.35373299e-16 11.4336172,0 Z" id="Rectangle-4"></path>
+                                    <path d="M11.4336172,16.8943217 L11.4336172,16.8943217 C17.7482296,16.8943217 22.8672344,22.0133265 22.8672344,28.3279389 L22.8672344,29.3427693 L0,29.3427693 L0,28.3279389 C-7.73316988e-16,22.0133265 5.11900478,16.8943217 11.4336172,16.8943217 Z" id="Rectangle-8"></path>
+                                </g>
+                            </g>
+                            <g id="Group-37" transform="translate(13.394928, 15.048327)">
+                                <circle id="Oval-11" stroke="#2196F3" stroke-width="1.79999995" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" cx="8.2850738" cy="8.2850738" r="8.13690932"></circle>
+                                <text id="18+" font-family="ProximaNova-Black, Proxima Nova" font-size="6" font-weight="700" letter-spacing="0.5" fill="#2196F3">
+                                    <tspan x="2.97683542" y="10.1164768">18</tspan>
+                                    <tspan x="10.6548354" y="10.1164768" letter-spacing="1.35000038">+</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

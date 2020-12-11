@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="587px" height="960px" viewBox="0 0 587 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>0FA68E48-CA51-4825-8DFD-E71B601B2D3F </title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="54.7241807%" y1="0%" x2="54.7241807%" y2="58.7522107%" id="linearGradient-1">
+            <stop stop-color="#F9FBFF" offset="0%"></stop>
+            <stop stop-color="#ECF2FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-" transform="translate(0.000000, -984.000000)" fill="url(#linearGradient-1)">
+            <path d="M-415.235512,2064.49013 C-886.634222,1906.70145 -243.819367,890.91465 -24.0357297,962.618878 C188.093124,1031.82574 -123.268558,1257.79064 126.545393,1407.09098 C250.701853,1481.2926 537.549242,1198.83498 656.279775,1476.30502 C707.570994,1596.17122 491.53947,1748.65247 355.289147,1784.17527 C219.038824,1819.69806 56.1631985,2222.27881 -415.235512,2064.49013 Z" id="BG-2" transform="translate(40.000000, 1530.000000) rotate(34.000000) translate(-40.000000, -1530.000000) "></path>
+        </g>
+    </g>
+</svg>

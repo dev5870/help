@@ -1,0 +1,14 @@
+{
+  "1": {
+    "email": "email@ya.ru",
+    "password": "1111111",
+    "token": "8b3903901fcf082d2fc80c5b1baf754d",
+    "name": "test"
+  },
+  "2": {
+    "email": "email2@ya.ru",
+    "password": "2222222",
+    "token": "7ec857ff9a8868ec453115336509ac25",
+    "name": "test2"
+  }
+}

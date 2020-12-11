@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="30px" viewBox="0 0 34 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon - Find talent</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Deskop-verion" transform="translate(-704.000000, -1207.000000)">
+            <g id="Find-Talent---Section" transform="translate(-72.000000, 1202.000000)">
+                <g id="Find-Talent---Text" transform="translate(574.000000, 0.000000)">
+                    <g id="icon---Find-talent" transform="translate(198.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                        <g id="Group-14" transform="translate(5.437881, 6.242868)">
+                            <path d="M22.9888834,23.962328 L22.9888834,12.4249108 C19.8746697,12.4249108 17.3501007,15.0076496 17.3501007,18.1936194 C17.3501007,21.3795892 19.8746697,23.962328 22.9888834,23.962328 Z" id="Oval-5-Copy" fill="#EFF2F7"></path>
+                            <ellipse id="Oval-5" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="22.9888834" cy="18.1936194" rx="5.63878273" ry="5.7687086"></ellipse>
+                            <g id="Group-13" stroke="#303A48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M10.7405385,0 L10.7405385,0 C13.7064564,-5.44830264e-16 16.1108078,2.40435145 16.1108078,5.37026927 L16.1108078,11.1371123 C16.1108078,14.1030301 13.7064564,16.5073815 10.7405385,16.5073815 L10.7405385,16.5073815 C7.77462072,16.5073815 5.37026927,14.1030301 5.37026927,11.1371123 L5.37026927,5.37026927 C5.37026927,2.40435145 7.77462072,5.44830264e-16 10.7405385,0 Z" id="Rectangle-4"></path>
+                                <path d="M22.5551309,27.5123026 L0,27.5123026 L0,24.9229094 C0,20.2751417 3.75078826,16.5073815 8.37762006,16.5073815 L11.5101921,16.5073815" id="Rectangle-4-Copy"></path>
+                            </g>
+                            <path d="M26.8926561,23.0748344 L30.7144673,27.2217913" id="Path-2" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="38px" viewBox="0 0 29 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon- Take Artup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---Deskop-verion" transform="translate(-878.000000, -5921.000000)">
+            <g id="Take-artup-with-you---section" transform="translate(169.000000, 5787.000000)">
+                <g id="Artup---Text" transform="translate(702.000000, 133.000000)">
+                    <g id="icon--Take-Artup" transform="translate(1.000000, 0.000000)">
+                        <g id="icon---Take-Artup-with-you">
+                            <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                            <g id="Group-53" transform="translate(7.000000, 2.000000)" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Group-38" transform="translate(0.617860, 5.821078)" stroke="#303A48" stroke-width="2">
+                                    <rect id="Rectangle-15" x="0" y="0" width="17.4836107" height="29.6461224"></rect>
+                                    <path d="M0.507013713,21.3353413 L17.2433343,21.3353413" id="Path-8"></path>
+                                    <path d="M0.507013713,4.33141668 L17.2433343,4.33141668" id="Path-8-Copy"></path>
+                                    <circle id="Oval-12" cx="8.74180533" cy="25.4071646" r="1.14023548"></circle>
+                                </g>
+                                <circle id="Oval-11" stroke="#2196F3" stroke-width="1.79999995" fill="#FFFFFF" cx="18.3586683" cy="9.38356266" r="8.60939607"></circle>
+                            </g>
+                            <g id="Group-40" transform="translate(25.548149, 11.362800) scale(1, -1) translate(-25.548149, -11.362800) translate(22.548149, 6.862800)" stroke="#2196F3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.79999995">
+                                <path d="M2.76212593,2.17214107 L2.76212593,8.37924683" id="Path-9" fill="#FFFFFF"></path>
+                                <polyline id="Rectangle-16" transform="translate(2.762126, 3.264401) rotate(137.000000) translate(-2.762126, -3.264401) " points="4.69582757 5.19810243 0.828424294 5.19810243 0.828424294 1.33069916"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
