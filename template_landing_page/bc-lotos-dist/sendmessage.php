@@ -1,6 +1,6 @@
 <?php
 
-$sendto  = 'sales@asgrealty.ru'; //Адреса, куда будут приходить письма
+$sendto  = ''; //Адреса, куда будут приходить письма
 
 $tip  = $_POST['tip'];
 $name  = $_POST['name'];
