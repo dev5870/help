@@ -1,0 +1,7 @@
+# Настройка CORS на уровне Nginx
+# Добавляется в основную секцию конфиг файла
+add_header 'Access-Control-Allow-Credentials' 'true';
+add_header 'Access-Control-Allow-Headers' '*';
+add_header 'Access-Control-Allow-Methods' 'POST, GET, PUT, DELETE, OPTIONS';
+add_header 'Access-Control-Allow-Origin' '*';
+
