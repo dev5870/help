@@ -1,0 +1,43 @@
+#!/bin/bash
+if [[ -z $1 ]]
+then
+  echo "allure: try 'allure --help' for more information"
+  #Выход с кодом 0 (удачное завершение работы скрипта)
+  exit 0
+fi
+while [ -n "$1" ]
+  do
+    case "$1" in
+      -site1)
+          echo -e "\033[37;1;44m****************************** start allure for site1 ******************************\033[0m"
+          /home/user/workspace/allure/bin/allure generate /home/user/workspace/site1/tests/_output/allure-results/ --clean
+          echo "Removed old directory history"
+          rm -r /home/user/workspace/site1/tests/_output/allure-results/history/
+          echo "New directory copied"
+          cp -r /tmp/allure-report/history/ /home/user/workspace/site1/tests/_output/allure-results/
+          echo "Open the report"
+          /home/user/workspace/allure/bin/allure open allure-report/
+          exit 0
+          ;;
+      -site2)
+          echo -e "\033[37;1;44m****************************** start allure for site2 ******************************\033[0m"
+          /home/user/workspace/allure/bin/allure generate /home/user/workspace/site2/tests/_output/allure-results/ --clean
+          echo "Removed old directory history"
+          rm -r /home/user/workspace/site2/tests/_output/allure-results/history/
+          echo "New directory copied"
+          cp -r /tmp/allure-report/history/ /home/user/workspace/site2/tests/_output/allure-results/
+          echo "Open the report"
+          /home/user/workspace/allure/bin/allure open allure-report/
+          exit 0
+          ;;
+      --help)
+          echo "Usage: allure [options]"
+          echo "Example: allure -df"
+          echo "Options:"
+          echo "-site1 Allure for site1.com"
+          echo "-site2 Allure for site2.com"
+          exit 0
+          ;;
+    esac
+  shift
+  done

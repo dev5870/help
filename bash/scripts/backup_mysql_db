@@ -1,0 +1,4 @@
+#!/bin/bash
+tm=$(date '+%d%m%Y%H%M%S');
+mysqldump -uyour_user_name -pyour_user_password db_name > /home/user/www/backup/db_name$tm.sql
+curl "https://api.telegram.org/bot_token/sendMessage?chat_id=1111111111&parse_mode=html&text=Выполнен бэкап базы данных db_name"

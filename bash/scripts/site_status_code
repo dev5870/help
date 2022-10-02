@@ -1,0 +1,51 @@
+#!/bin/bash
+export DISPLAY=:0.0
+code=$(curl -s -o /dev/null -w "%{http_code}" https://vk.com)
+res=$(curl -s -I https://vk.com)
+date=$(date '+%d-%m-%Y %H:%M:%S');
+
+case $code in
+   200)
+       echo "$date :I/Status(OK): Url = vk.com, code $code"
+       ;;
+   301)
+       echo "$date :W/Status(Warning): Url = vk.com, code $code"
+       zenity \
+       --error \
+       --width=300 \
+       --text="<span size=\"xx-large\">Code: $code</span>\n\n$res" \
+       --title="vk.com" \
+       --ok-label="Close"
+       curl -s 'https://api.telegram.org/bot1111111111:qwerqwerqwerqwerqwer/sendMessage?chat_id=-123123123&parse_mode=html&text='"$date :W/Status(Warning): Url = vk.com, code $code" > /dev/null
+       ;;
+   404)
+       echo "$date :W/Status(Warning): Url = vk.com, code $code"
+       zenity \
+       --error \
+       --width=300 \
+       --text="<span size=\"xx-large\">Code: $code</span>\n\n$res" \
+       --title="vk.com" \
+       --ok-label="Close"
+       curl -s 'https://api.telegram.org/bot1111111111:qwerqwerqwerqwerqwer/sendMessage?chat_id=-123123123&parse_mode=html&text='"$date :W/Status(Warning): Url = vk.com, code $code" > /dev/null
+       ;;
+   500)
+       echo "$date :E/Status(Error): Url = vk.com, code $code"
+       zenity \
+       --error \
+       --width=300 \
+       --text="<span size=\"xx-large\">Code: $code</span>\n\n$res" \
+       --title="vk.com" \
+       --ok-label="Close"
+       curl -s 'https://api.telegram.org/bot1111111111:qwerqwerqwerqwerqwer/sendMessage?chat_id=-123123123&parse_mode=html&text='"$date :E/Status(Error): Url = vk.com, code $code" > /dev/null
+       ;;
+     *)
+       echo "$date :E/Status(Error): Url = vk.com, code $code"
+       zenity \
+       --error \
+       --width=300 \
+       --text="<span size=\"xx-large\">Code: $code</span>\n\n$res" \
+       --title="vk.com" \
+       --ok-label="Close"
+       curl -s 'https://api.telegram.org/bot1111111111:qwerqwerqwerqwerqwer/sendMessage?chat_id=-123123123&parse_mode=html&text='"$date :E/Status(Error): Url = vk.com, code $code" > /dev/null
+       ;;
+esac
